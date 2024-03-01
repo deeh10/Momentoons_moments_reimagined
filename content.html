@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MomenToon Gallery</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #333;
+            background: #fafafa;
+        }
+        .intro-text, .coming-soon, .how-it-works, footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 0 auto;
+            width: 100%;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center; /* Center the gallery items */
+        }
+        .gallery-item {
+            display: flex;
+            justify-content: center; /* Center the image horizontally */
+            align-items: center; /* Center the image vertically */
+            flex: 0 1 250px; /* Allows item to grow and shrink but not smaller than 250px */
+        }
+        .gallery img {
+            max-width: 100%; /* Ensure it doesn't overflow its container */
+            max-height: 100%; /* Maintain aspect ratio while fitting into the container */
+            border-radius: 10px;
+        }
+        h1, h2, .coming-soon p, .how-it-works p, footer p {
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            color: #007bff;
+        }
+        footer {
+            background-color: #f4f4f4;
+            width: 100%;
+            /* Footer styles are unchanged, ensuring it spans the full width */
+        }
+    </style>
+</head>
+<body>
+
+<div class="intro-text">
+    <h1>Welcome to the MomenToon Gallery</h1>
+    <p>Explore a world of imagination with our AI-generated artwork.</p>
+</div>
+
+<div class="gallery">
+    <!-- Each image is wrapped in a div that will be centered within the flex container -->
+    <div class="gallery-item"><img src="https://i.imgur.com/XCoTNUA.jpg" alt="AI Generated Art 1"></div>
+    <div class="gallery-item"><img src="https://i.imgur.com/MDJXrmo.jpg" alt="AI Generated Art 2"></div>
+    <div class="gallery-item"><img src="https://i.imgur.com/9oFRibR.jpg" alt="AI Generated Art 3"></div>
+</div>
+
+<div class="how-it-works">
+    <p>Want to see how it works, here you go! <a href="https://beite-llm-aiproject.streamlit.app/" target="_blank">Click here</a></p>
+</div>
+
+<div class="coming-soon">
+    <p>More features coming soon - stay tuned!</p>
+</div>
+
+<footer>
+    <p>Contact us at info@momentoon.com</p>
+    <p>&copy; 2024 MomenToon. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
